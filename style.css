@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder
+{
+    font-family: 'Bree Serif',serif;
+}
+
+:root {
+    --navbar-height: 57px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0px;
+}
+
+#navbar div img
+{
+    border-radius: 29px;
+}
+
+#navbar img {
+    width: 58px;
+    padding: 7px;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 20px;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 3px 25px;
+    display: block;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar::before {
+    content: "";
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul li a:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    border-radius: 23px;
+}
+
+#Home {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    width: 100%;
+    height: 360px;
+    font-family: 'Bree Serif', serif;
+}
+
+#Home::before {
+    content: "";
+    background: url("./images/bg3.jpg") no-repeat center/cover;
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#Home p {
+    margin: 0px 15px;
+    padding: 0px 40px;
+}
+
+.h-primary {
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 4px;
+    margin: 10px 20px;
+    border-radius: 23px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.center {
+    text-align: center;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}
+
+#services {
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Services {
+    height: 147px;
+    display: flex;
+    margin: 0px 50px;
+}
+
+.box {
+    width: 30%;
+    height: 138px;
+    text-align: center;
+}
+
+.box img {
+    width: 112px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+
+.box a p {
+    margin: 0px 116px;
+}
+
+.box a p:hover {
+    background: black;
+    color: white;
+    border-radius: 23px;
+    opacity: 0.7;
+}
+
+#owners {
+    height: 555px;
+}
+
+#owners::before {
+    content: "";
+    position: absolute;
+    background: url('./images/bg2.png') no-repeat center/cover;
+    width: 100%;
+    height: 555px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.owner {
+    height: 456px;
+    display: flex;
+    margin: 0px 50px;
+}
+
+.Box {
+    width: 20%;
+    height: 453px;
+    border: 2px solid red;
+    margin: 0px 33px;
+    border-radius: 25px;
+    background-color: rgb(227, 207, 207);
+}
+
+.Box img {
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+
+.h-secondary {
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact {
+    height: 500px;
+}
+
+#Contact {
+    height: 414px;
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact input,
+#Contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#Contact form {
+    width: 40%;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url("./images/bg1.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.footer {
+    background: black;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+.icon
+{
+    font-family: 'Bree Serif',serif;
+}
+@media(Max-Width:1262px) {
+    .box a p {
+        margin: 0px 68px;
+    }
+
+    .box {
+        width: 20%;
+        height: 112px;
+        margin: 3px 28px;
+    }
+
+    .Box p {
+        font-size: 0.8rem;
+    }
+
+    .Box {
+        height: 425px;
+    }
+
+    .font {
+        font-size: 1.5rem;
+    }
+}
+
+@media(Max-Width:1100px) {
+    .box a p {
+        margin: 0px 50px;
+        font-size: 0.6rem
+    }
+
+    .box {
+        margin: 3px 20px;
+    }
+
+    .box img {
+        width: 70px;
+    }
+
+    .h-primary {
+        font-size: 2rem;
+    }
+
+    .Box p {
+        font-size: 0.5rem;
+    }
+
+    .Box {
+        height: 357px;
+    }
+
+    .Box img {
+        width: 70px;
+    }
+
+    #owners {
+        height: 450px;
+    }
+
+    .owner {
+        height: 360px;
+    }
+
+    .Box {
+        height: 330px;
+    }
+
+    .font {
+        font-size: 1rem;
+    }
+
+    .h-secondary {
+        font-size: 0.5rem;
+    }
+
+    .Services {
+        height: 100px;
+        margin: opx 37px;
+    }
+
+    #services {
+        height: 169px;
+    }
+}
+
+@media(Max-Width:800px) {
+    #navbar {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #navbar img {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar ul li a {
+        font-size: 1rem;
+    }
+
+    .h-primary {
+        font-size: 1.2rem;
+    }
+
+    .h-secondary {
+        font-size: 0.8rem;
+    }
+
+    #Home {
+        height: 505px;
+    }
+
+    #Home p {
+        font-size: 1rem;
+    }
+
+    #Home::before {
+        height: 505px;
+    }
+
+    .Box img {
+        width: 60px;
+    }
+
+    .box {
+        width: 17%;
+        margin: 3px 28px;
+    }
+
+    .box img {
+        width: 50px;
+    }
+
+    .box a p {
+        margin: 0px 25px;
+    }
+
+    .font {
+        font-size: 0.6rem;
+    }
+
+    .time
+    {
+        visibility: hidden;
+    }
+}
+
+@media(Max-Width:665px) {
+    #navbar ul li a {
+        font-size: 0.5rem;
+        padding: 3px 22px;
+    }
+
+    #Date,#container
+    {
+        position: relative;
+        top: 100px;
+        font-size: 0.7rem;
+    }
+
+    #services {
+        height: 270px;
+    }
+
+    .Services {
+
+        flex-wrap: wrap;
+        margin: 0px 85px;
+        height: 236px;
+
+    }
+
+    .font {
+        font-size: 0.7rem;
+    }
+
+    .h-secondary {
+        font-size: 0.4rem;
+    }
+
+    .box {
+        width: 30%;
+        margin: 3px 20px;
+        height: 66px;
+    }
+
+    .box img {
+        width: 40px;
+    }
+
+    .box a p {
+        margin: 0px 8px;
+    }
+
+    .Box img {
+        width: 30px;
+    }
+
+    .Box {
+        width: 37%;
+        margin: 3px 18px;
+        height: 309px;
+    }
+
+    .Box p {
+        font-size: 0.5rem;
+    }
+
+    .h-primary {
+        font-size: 1rem;
+    }
+
+    #Home p {
+        font-size: 0.7rem;
+    }
+
+    .btn {
+        font-size: 0.7rem;
+    }
+
+    #Home {
+        height: 476px;
+    }
+
+    #Home::before {
+        height: 476px;
+    }
+
+    .footer {
+        font-size: 0.4rem;
+    }
+
+    #Contact form div label {
+        font-size: 0.8rem;
+    }
+
+    .owner {
+        flex-wrap: wrap;
+        height: 640px;
+        margin: 0px 32px;
+    }
+
+    #owners {
+        height: 702px;
+    }
+
+    .font {
+        font-size: 0.7rem;
+    }
+}
+
+@media(Max-Width:371px) {
+    .Box {
+        width: 32%;
+        margin: 3px 17px;
+    }
+
+    .owner {
+        margin: 0px 34px;
+    }
+
+    .Services {
+        margin: 0px 15px;
+        padding: 0px 38px;
+    }
+
+    .box {
+        width: 35%;
+        margin: 7px 13px;
+    }
+}
+
+.time
+{
+    font-size: 1rem;
+    color: white;
+    font-family: 'Bree Serif',serif;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    padding:5px;
+    border-radius: 10px;
+}
+
+#Date
+{
+    text-align: center;
+}
