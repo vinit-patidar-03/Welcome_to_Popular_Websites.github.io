@@ -167,12 +167,13 @@ a {
     padding: 2px;
 }
 
-.box a p {
-    margin: 0px 116px;
+.box a p
+{
+    padding: 1px 5px;
 }
 
 .box a p:hover {
-    background: black;
+    background: linear-gradient(to right,darkblue,blue,skyblue);
     color: white;
     border-radius: 23px;
     opacity: 0.7;
@@ -284,7 +285,6 @@ a {
 
 @media(Max-Width:1100px) {
     .box a p {
-        margin: 0px 50px;
         font-size: 0.6rem
     }
 
@@ -390,10 +390,6 @@ a {
         width: 50px;
     }
 
-    .box a p {
-        margin: 0px 25px;
-    }
-
     .font {
         font-size: 0.6rem;
     }
@@ -446,10 +442,6 @@ a {
 
     .box img {
         width: 40px;
-    }
-
-    .box a p {
-        margin: 0px 8px;
     }
 
     .Box img {
