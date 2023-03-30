@@ -23,14 +23,18 @@ html {
     top: 0px;
 }
 
+#navbar div
+{
+   align-self: center;
+   margin: 10px;
+}
 #navbar div img
 {
-    border-radius: 29px;
+    border-radius: 30px;
 }
 
 #navbar img {
-    width: 58px;
-    padding: 7px;
+    width: 40px;
 }
 
 #navbar ul {
@@ -40,11 +44,12 @@ html {
 
 #navbar ul li {
     list-style: none;
+    margin: 0px 10px;
 }
 
 #navbar ul li a {
     text-decoration: none;
-    padding: 3px 25px;
+    padding: 0px 10px;
     display: block;
     color: white;
     font-size: 1rem;
@@ -63,7 +68,7 @@ html {
 
 #navbar ul li a:hover {
     cursor: pointer;
-    background: white;
+    background: linear-gradient(to right,red,orange);
     color: black;
     border-radius: 23px;
 }
@@ -107,14 +112,21 @@ html {
 }
 
 .btn {
-    padding: 4px;
+    padding: 3px 10px;
     margin: 10px 20px;
     border-radius: 23px;
-    background-color: brown;
-    color: white;
+    background: linear-gradient(to right,#37306B,#66347F,#9E4784);
+    color:white;
+    border: none;
     cursor: pointer;
     font-size: 1rem;
     font-family: 'Bree Serif', serif;
+    transition: all 0.5s;
+}
+
+.btn:hover
+{
+   background: linear-gradient(to right,#9E4784,#66347F,#37306B);
 }
 
 .center {
@@ -147,6 +159,10 @@ html {
 
 a {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: black;
     padding: 2px;
 }
@@ -246,9 +262,6 @@ a {
     font-family: 'Bree Serif',serif;
 }
 @media(Max-Width:1262px) {
-    .box a p {
-        margin: 0px 68px;
-    }
 
     .box {
         width: 20%;
@@ -411,8 +424,9 @@ a {
     .Services {
 
         flex-wrap: wrap;
-        margin: 0px 85px;
-        height: 236px;
+        justify-content: center;
+        margin: 35px 85px;
+        height: 150px;
 
     }
 
@@ -482,6 +496,7 @@ a {
 
     .owner {
         flex-wrap: wrap;
+        justify-content: center;
         height: 640px;
         margin: 0px 32px;
     }
